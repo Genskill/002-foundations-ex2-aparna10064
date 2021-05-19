@@ -17,7 +17,7 @@
 	   printf("\n");
    }
  }
-if(type == 2)
+else if(type == 2)
 {
 	for(i = rows; i >= 1; i--)
 	{
@@ -31,6 +31,7 @@ if(type == 2)
 			{
 			printf("#");
 			}
+		printf("\n");
 		}
 	}
 }
