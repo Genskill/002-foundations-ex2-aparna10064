@@ -8,7 +8,7 @@ if(p==1)
 {
 	for(int i=row;i>0;i--)
 	{
-		for(int j=0;j<i;j++);
+		for(int j = i;j > 0; j--);
 		{
 		printf("#");
 		}
@@ -18,23 +18,17 @@ if(p==1)
 else if(p==2)
 {
 
-	for(int i=row;i>0;i--)
+	for(int i= 0 ; i<rows ; i++)
 	{
-		for(int j=0;j<i;j++);
+		for(int k=row -i-1 ; k>0 ; k--);
 		{
-		  if(j<=i-1)
-		  {
-		   printf("#");
+		   printf("");
 		}
-		else{
-		
-		printf("");
+		for(int j=0; j<=i; j++)
+		{
+			printf("#");
+		}
+		printf("\n");
 	}
-	printf("\n");
 }
-}
-else
- printf("error");
-
-
 }
