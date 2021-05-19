@@ -19,22 +19,19 @@
  }
 if(type == 2)
 {
-    for(i=rows;i>0;i--)
-    {
-           for(j=0;j<rows;j++)
-          {
-              if(j>=i-1)
-          {
-              printf("#");
-          }
-              else{
-             printf(" ");
-       }
-      printf("\n");
-     }
+	for(i = rows; i >= 1; i--)
+	{
+		for(j = 1; j < rows; j++)
+		{
+			if(j <= i-1)
+			{
+			printf(" ");
+		        }
+			else
+			{
+			printf("#");
+			}
+		}
+	}
 }
-else
- printf("error");
-}
-	
-	
+ }
